@@ -82,19 +82,19 @@ pwm_modulated_wave = pwmMod.modulate(sine_wave, modulation_frequency, depth, dur
 plt.figure(figsize=(15, 10))
 
 plt.subplot(3, 2, 1)
-plt.plot(sine_wave[:1000])
+plt.plot(sine_wave)
 plt.title("Original Sine Wave")
 
 plt.subplot(3, 2, 2)
-plt.plot(freq_modulated_wave[:1000])
+plt.plot(freq_modulated_wave)
 plt.title("Frequency Modulated Wave")
 
 plt.subplot(3, 2, 3)
-plt.plot(amp_modulated_wave[:1000])
+plt.plot(amp_modulated_wave)
 plt.title("Amplitude Modulated Wave")
 
 plt.subplot(3, 2, 4)
-plt.plot(ring_modulated_wave[:1000])
+plt.plot(ring_modulated_wave)
 plt.title("Ring Modulated Wave")
 
 plt.subplot(3, 2, 5)
@@ -102,7 +102,7 @@ plt.plot(square_wave[:1000])
 plt.title("Original Square Wave")
 
 plt.subplot(3, 2, 6)
-plt.plot(pwm_modulated_wave[:1000])
+plt.plot(pwm_modulated_wave)
 plt.title("Pulse Width Modulated Wave")
 
 plt.tight_layout()
